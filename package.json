@@ -1,0 +1,36 @@
+{
+  "name": "coursera-code",
+  "version": "0.0.1",
+  "description": "coursera lessons",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatak/CourseraCode.git"
+  },
+  "author": "Takashi Mizohata <beatak@gmail.com> (http://github.com/beatak)",
+  "license": "Fair",
+  "bugs": {
+    "url": "https://github.com/beatak/CourseraCode/issues"
+  },
+  "homepage": "https://github.com/beatak/CourseraCode#readme",
+  "devDependencies": {
+    "node-es-module-loader": "0.3.8",
+    "ava": "0.19.1"
+  },
+  "ava": {
+    "source": [
+      "**/src/*.js"
+    ],
+    "files": [
+      "**/tests/*.test.js"
+    ],
+    "require": "babel-register",
+    "babel": "inherit"
+  },
+  "babel": {
+    "presets": ["@ava/stage-4"]
+  }
+}
